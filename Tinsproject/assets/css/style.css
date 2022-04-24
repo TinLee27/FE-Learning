@@ -1,0 +1,101 @@
+#html{
+    font-family: helvetica, arial, sans-serif;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#header {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(12, 7, 11);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+} 
+#nav {
+    padding-left: 0px;
+}
+
+#nav li{
+    display: inline-block;
+    padding: 0px 30px;
+    position: relative;
+}
+
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+#nav li:hover{
+    background-color: rgba(116, 108, 108);
+    cursor: pointer
+}
+
+#nav li:hover a{
+    color: black;
+}
+
+#nav .subnav {
+    padding: 0;
+    position: absolute;
+    transform: translateX(-30px);
+    display: none
+}
+
+#nav li:hover > ul {
+    display: block;
+    background-color: white
+}
+
+#nav .subnav li{
+    width: 170px;
+}
+li:last-child{
+    float: right
+}
+
+#nav li .search{
+    color: white;
+    line-height: 50px;
+}
+
+
+#slider {
+    margin-top: 50px;
+    padding-top: 50%;
+    background: url('./img/bbconcert.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 25px;
+    color:rgb(255, 255, 255);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading{
+    font-weight: 350;
+    font-size: 25px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}    
+
+#content {
+
+}
+
+#footer {
+
+}  
